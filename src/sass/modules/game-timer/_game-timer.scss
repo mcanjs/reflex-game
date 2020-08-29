@@ -1,0 +1,22 @@
+.game-timer-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    .game-timer {
+        &-minute, &-second, &-milli-second {
+            font-size: 1.5rem;
+            color: white;
+        }
+        &-minute, &-second {
+            &:after {
+                padding-right: 10px;
+                padding-left: 10px;
+                content: ":";
+                display: inline-block;
+            }
+        }
+    }
+}

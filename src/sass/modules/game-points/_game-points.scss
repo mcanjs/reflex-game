@@ -1,0 +1,17 @@
+.game-points-wrapper {
+    position: absolute;
+    right: 0;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    &:before {
+        content: "Points :";
+        padding-right: 10px;
+        font-size: 1.5rem;
+        color: white;
+    }
+    .game-points-inner {
+        font-size: 1.5rem;
+        color: white;
+    }
+}
